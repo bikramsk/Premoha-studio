@@ -1,0 +1,41 @@
+name: Deploy Studio to Sanity
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'premoha-studio/**'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy Sanity Studio
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: premoha-studio/package-lock.json
+
+      - name: Install dependencies
+        working-directory: premoha-studio
+        run: npm install
+
+      - name: Deploy to Sanity
+        working-directory: premoha-studio
+        env:
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+        run: |
+          npx sanity deploy --auth-token $SANITY_AUTH_TOKEN
+
+      - name: Notify deployment status
+        if: success()
+        run: echo "Studio deployed successfully!"
