@@ -97,6 +97,13 @@ import weddingRingGuideMatchingSets from "./weddingRingGuideMatchingSets"
 import weddingRingGuideAlternativePiece from "./weddingRingGuideAlternativePiece"
 import weddingRingGuideInsurance from "./weddingRingGuideInsurance"
 
+import promoPage from "./promo/promoPage"
+import promoOffer from "./promo/promoOffer"
+
+import faqPage from "./faq/faqPage"
+import faqCategory from "./faq/faqCategory"
+import faqItem from "./faq/faqItem"
+
 export const schemaTypes = [
   banner, 
   category, 
@@ -207,6 +214,14 @@ export const schemaTypes = [
   weddingRingGuideAlternativePiece,
   weddingRingGuideInsurance,
 
+ // Promo Codes and Offers
+  promoPage,
+  promoOffer,
+
+// FAQ,s
+  faqPage,
+  faqCategory,
+  faqItem,
 ]
 
 

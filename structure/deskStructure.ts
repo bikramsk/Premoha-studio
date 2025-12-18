@@ -25,6 +25,9 @@ const deskStructure = (S: StructureBuilder) =>
             ])
         ),
 
+      S.documentTypeListItem('promoPage').title('Promo Codes Page'),
+      S.documentTypeListItem('faqPage').title('FAQ Page'),
+
     
       S.listItem()
         .title('Rings')

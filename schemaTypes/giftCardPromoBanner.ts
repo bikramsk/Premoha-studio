@@ -10,7 +10,7 @@ export default {
     },
     {
       name: 'highlight',
-      title: 'Main Highlight (e.g., "$250 Gift Card")',
+      title: 'Main Highlight (e.g., "Rs.100")',
       type: 'string',
     },
     {
@@ -27,9 +27,13 @@ export default {
       },
     },
     {
-      name: 'termsLink',
-      title: 'Terms & Conditions Link',
-      type: 'url',
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+        maxLength: 96,
+      },
     },
     {
       name: 'bgColor',
