@@ -1,4 +1,5 @@
 import banner from "./banner"
+import announcementBar from "./announcementBar"
 import category from "./category"
 import diamondShape from "./diamondShape"
 import engagementRingCategory from "./engagementRingCategory"
@@ -106,6 +107,7 @@ import faqItem from "./faq/faqItem"
 
 export const schemaTypes = [
   banner, 
+  announcementBar,
   category, 
   diamondShape, 
   engagementRingCategory, 

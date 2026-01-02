@@ -12,6 +12,7 @@ const deskStructure = (S: StructureBuilder) =>
             .title('Homepage Sections')
             .items([
               S.documentTypeListItem('banner'),
+              S.documentTypeListItem('announcementBar'),
               S.documentTypeListItem('category'),
               S.documentTypeListItem('diamondShape'),
               S.documentTypeListItem('engagementRingCategory'),
