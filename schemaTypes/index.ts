@@ -105,6 +105,14 @@ import faqPage from "./faq/faqPage"
 import faqCategory from "./faq/faqCategory"
 import faqItem from "./faq/faqItem"
 
+import blog from "./blog"
+import blogHero from "./blogHero"
+import blogPopularGuides from "./blogPopularGuides"
+import blogRingGuides from "./blogRingGuides"
+import blogWeddingRingGuides from "./blogWeddingRingGuides"
+import blogDiamondGuides from "./blogDiamondGuides"
+import blogPendantGuides from "./blogPendantGuides"
+
 export const schemaTypes = [
   banner, 
   announcementBar,
@@ -224,6 +232,15 @@ export const schemaTypes = [
   faqPage,
   faqCategory,
   faqItem,
+
+  // Blog
+  blog,
+  blogHero,
+  blogPopularGuides,
+  blogRingGuides,
+  blogWeddingRingGuides,
+  blogDiamondGuides,
+  blogPendantGuides,
 ]
 
 
