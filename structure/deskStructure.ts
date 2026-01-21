@@ -28,6 +28,7 @@ const deskStructure = (S: StructureBuilder) =>
 
       S.documentTypeListItem('promoPage').title('Promo Codes Page'),
       S.documentTypeListItem('faqPage').title('FAQ Page'),
+      S.documentTypeListItem('notFoundPage').title('404 Page'),
 
       S.listItem()
         .title('Blog')
@@ -40,7 +41,7 @@ const deskStructure = (S: StructureBuilder) =>
               S.documentTypeListItem('blogRingGuides').title('Ring Guides'),
               S.documentTypeListItem('blogWeddingRingGuides').title('Wedding Ring Guides'),
               S.documentTypeListItem('blogDiamondGuides').title('Diamond Guides'),
-              S.documentTypeListItem('blogPendantGuides').title('Pendant Guides'),
+              S.documentTypeListItem('blogJewelryGuides').title('Jewelry Guides'),
               S.documentTypeListItem('blog').title('Blog Posts'),
             ])
         ),

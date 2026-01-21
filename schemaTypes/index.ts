@@ -111,7 +111,8 @@ import blogPopularGuides from "./blogPopularGuides"
 import blogRingGuides from "./blogRingGuides"
 import blogWeddingRingGuides from "./blogWeddingRingGuides"
 import blogDiamondGuides from "./blogDiamondGuides"
-import blogPendantGuides from "./blogPendantGuides"
+import blogJewelryGuides from "./blogJewelryGuides"
+import notFoundPage from "./notFoundPage"
 
 export const schemaTypes = [
   banner, 
@@ -240,7 +241,10 @@ export const schemaTypes = [
   blogRingGuides,
   blogWeddingRingGuides,
   blogDiamondGuides,
-  blogPendantGuides,
+  blogJewelryGuides,
+
+  // Pages
+  notFoundPage,
 ]
 
 

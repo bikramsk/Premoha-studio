@@ -1,11 +1,11 @@
 export default {
-  name: 'blogPendantGuides',
-  title: 'Pendant Guides',
+  name: 'blogJewelryGuides',
+  title: 'Jewelry Guides',
   type: 'document',
   fields: [
     {
       name: 'guides',
-      title: 'Pendant Guides (4 Items)',
+      title: 'Jewelry Guides (4 Items)',
       type: 'array',
       of: [
         {
@@ -94,7 +94,7 @@ export default {
   preview: {
     prepare() {
       return {
-        title: 'Pendant Guides',
+        title: 'Jewelry Guides',
       }
     },
   },
