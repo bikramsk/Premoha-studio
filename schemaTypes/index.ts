@@ -23,7 +23,8 @@ import engagementGuide from "./engagementGuide"
 import ringStyleCarouselItem from "./ringStyleCarouselItem"
 import exploreItem from "./exploreItem"
 import exploreLinkGroup from "./exploreLinkGroup"
-import engagementRingFaq from "./engagementRingFaq"
+import categoryFaq from "./categoryFaq"
+import categoryHighlights from "./categoryHighlights"
 
 import engagementRingSettingStyle from "./engagementRingFilters/settingStyle"
 import engagementRingMetal from "./engagementRingFilters/metal"
@@ -140,7 +141,8 @@ export const schemaTypes = [
   ringStyleCarouselItem,
   exploreItem,
   exploreLinkGroup,
-  engagementRingFaq,
+  categoryFaq,
+  categoryHighlights,
 
   engagementRingSettingStyle,
   engagementRingMetal,
@@ -243,8 +245,6 @@ export const schemaTypes = [
   blogDiamondGuides,
   blogJewelryGuides,
 
-  // Pages
+  // Not found Page -404
   notFoundPage,
 ]
-
-

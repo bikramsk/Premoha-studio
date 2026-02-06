@@ -4,13 +4,11 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'backgroundImage',
-      title: 'Background Image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-      validation: (Rule: any) => Rule.required(),
+      name: 'images',
+      title: 'Hero Images',
+      type: 'array',
+      of: [{ type: 'image', options: { hotspot: true } }],
+      validation: (Rule: any) => Rule.required().min(1),
     },
   ],
   preview: {

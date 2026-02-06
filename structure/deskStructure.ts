@@ -27,6 +27,68 @@ const deskStructure = (S: StructureBuilder) =>
         ),
 
       S.documentTypeListItem('promoPage').title('Promo Codes Page'),
+      
+      S.listItem()
+        .title('Category Highlights')
+        .child(
+          S.documentTypeList('categoryHighlights')
+            .title('Category Highlights')
+        ),
+
+      S.listItem()
+        .title('Category FAQs')
+        .child(
+          S.list()
+            .title('Category FAQs')
+            .items([
+              S.listItem()
+                .title('Rings')
+                .child(
+                  S.documentList()
+                    .title('Rings FAQs')
+                    .schemaType('categoryFaq')
+                    .filter('_type == "categoryFaq" && pageContext == "rings"')
+                ),
+              S.listItem()
+                .title('Silver Earrings')
+                .child(
+                  S.documentList()
+                    .title('Silver Earring FAQs')
+                    .schemaType('categoryFaq')
+                    .filter('_type == "categoryFaq" && pageContext == "earrings"')
+                ),
+              S.listItem()
+                .title('Silver Pendants')
+                .child(
+                  S.documentList()
+                    .title('Silver Pendant FAQs')
+                    .schemaType('categoryFaq')
+                    .filter('_type == "categoryFaq" && pageContext == "pendants"')
+                ),
+              S.listItem()
+                .title('Silver Bracelets')
+                .child(
+                  S.documentList()
+                    .title('Silver Bracelet FAQs')
+                    .schemaType('categoryFaq')
+                    .filter('_type == "categoryFaq" && pageContext == "bracelets"')
+                ),
+              S.listItem()
+                .title('Gifts')
+                .child(
+                  S.documentList()
+                    .title('Gift FAQs')
+                    .schemaType('categoryFaq')
+                    .filter('_type == "categoryFaq" && pageContext == "gifts"')
+                ),
+              S.listItem()
+                .title('All Category FAQs')
+                .child(
+                  S.documentTypeList('categoryFaq')
+                    .title('All Category FAQs')
+                ),
+            ])
+        ),
       S.documentTypeListItem('faqPage').title('FAQ Page'),
       S.documentTypeListItem('notFoundPage').title('404 Page'),
 
@@ -63,6 +125,14 @@ const deskStructure = (S: StructureBuilder) =>
               S.documentTypeListItem('diamondLeadershipBanner'),
               S.documentTypeListItem('engagementReview'),
               S.documentTypeListItem('engagementGuide'),
+              S.listItem()
+                .title('Category FAQs')
+                .child(
+                  S.documentList()
+                    .title('Engagement Ring FAQs')
+                    .schemaType('categoryFaq')
+                    .filter('_type == "categoryFaq" && pageContext == "rings"')
+                ),
             ])
         ),
 
@@ -76,7 +146,7 @@ const deskStructure = (S: StructureBuilder) =>
               S.documentTypeListItem('ringStyleCarouselItem'),
                S.documentTypeListItem('exploreItem'),
                S.documentTypeListItem('exploreLinkGroup'),
-              S.documentTypeListItem('engagementRingFaq'),
+              S.documentTypeListItem('categoryFaq'),
               
             ])
         ),
@@ -108,6 +178,14 @@ const deskStructure = (S: StructureBuilder) =>
               S.documentTypeListItem('earringsPromoSection'),
               S.documentTypeListItem('earringsStandardsBanner'),
               S.documentTypeListItem('earringsEditSection'),
+              S.listItem()
+                .title('Category FAQs')
+                .child(
+                  S.documentList()
+                    .title('Silver Earring FAQs')
+                    .schemaType('categoryFaq')
+                    .filter('_type == "categoryFaq" && pageContext == "earrings"')
+                ),
             ])
         ),
 
@@ -142,6 +220,14 @@ const deskStructure = (S: StructureBuilder) =>
               S.documentTypeListItem('pendantsPromoSection'),
               S.documentTypeListItem('pendantsStandardsBanner'),
               S.documentTypeListItem('pendantsEditSection'),
+              S.listItem()
+                .title('Category FAQs')
+                .child(
+                  S.documentList()
+                    .title('Silver Pendant FAQs')
+                    .schemaType('categoryFaq')
+                    .filter('_type == "categoryFaq" && pageContext == "pendants"')
+                ),
             ])
         ),
 
@@ -176,7 +262,14 @@ const deskStructure = (S: StructureBuilder) =>
               S.documentTypeListItem('braceletsPromoSection'),
               S.documentTypeListItem('braceletsStandardsBanner'),
               S.documentTypeListItem('braceletsEditSection'),
-
+              S.listItem()
+                .title('Category FAQs')
+                .child(
+                  S.documentList()
+                    .title('Silver Bracelet FAQs')
+                    .schemaType('categoryFaq')
+                    .filter('_type == "categoryFaq" && pageContext == "bracelets"')
+                ),
             ])
         ),
 
@@ -213,6 +306,14 @@ const deskStructure = (S: StructureBuilder) =>
               S.documentTypeListItem('giftsShopByOccasion'),
               S.documentTypeListItem('giftsStandardsBanner'),
               S.documentTypeListItem('giftsEditSection'),
+              S.listItem()
+                .title('Category FAQs')
+                .child(
+                  S.documentList()
+                    .title('Category FAQs')
+                    .schemaType('categoryFaq')
+                    .filter('_type == "categoryFaq"')
+                ),
             ])
         ),
 

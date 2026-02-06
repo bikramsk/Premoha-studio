@@ -56,6 +56,21 @@ export default {
       validation: (Rule: any) => Rule.required(),
     },
     {
+      name: 'blogSection',
+      title: 'Header Navigation Section',
+      description: 'Which section in the blog header should this post appear under?',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Engagement', value: 'Engagement' },
+          { title: 'Wedding', value: 'Wedding' },
+          { title: 'Proposal', value: 'Proposal' },
+          { title: 'Fine Jewellery', value: 'Fine Jewellery' },
+          { title: 'Diamond Rings', value: 'Diamond Rings' },
+        ],
+      },
+    },
+    {
       name: 'content',
       title: 'Content',
       type: 'array',
