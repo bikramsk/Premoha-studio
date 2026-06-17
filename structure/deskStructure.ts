@@ -23,6 +23,7 @@ const deskStructure = (S: StructureBuilder) =>
               S.documentTypeListItem('showroomSection'),
               S.documentTypeListItem('missionSection'),
               S.documentTypeListItem('instagramGallery'),
+              S.documentTypeListItem('popularProducts'),
             ])
         ),
 
@@ -176,7 +177,6 @@ const deskStructure = (S: StructureBuilder) =>
               S.documentTypeListItem('earringsHero'),
               S.documentTypeListItem('earringStyle'),
               S.documentTypeListItem('earringsPromoSection'),
-              S.documentTypeListItem('earringsStandardsBanner'),
               S.documentTypeListItem('earringsEditSection'),
               S.listItem()
                 .title('Category FAQs')

@@ -25,6 +25,7 @@ import exploreItem from "./exploreItem"
 import exploreLinkGroup from "./exploreLinkGroup"
 import categoryFaq from "./categoryFaq"
 import categoryHighlights from "./categoryHighlights"
+import popularProducts from "./popularProducts"
 
 import engagementRingSettingStyle from "./engagementRingFilters/settingStyle"
 import engagementRingMetal from "./engagementRingFilters/metal"
@@ -38,7 +39,6 @@ import earringStyle from "./earrings/earringStyle"
 import earringFilterStyle from "./earrings/earringFilterStyle"
 import earringsHero from "./earrings/earringsHero"
 import earringsPromoSection from "./earrings/earringsPromoSection"
-import earringsStandardsBanner from "./earrings/earringsStandardsBanner"
 import earringsEditSection from "./earrings/earringsEditSection"
 
 import pendantStyleCarouselItem from "./pendants/pendantStyleCarouselItem"
@@ -143,6 +143,7 @@ export const schemaTypes = [
   exploreLinkGroup,
   categoryFaq,
   categoryHighlights,
+  popularProducts,
 
   engagementRingSettingStyle,
   engagementRingMetal,
@@ -157,7 +158,6 @@ export const schemaTypes = [
   earringFilterStyle,
   earringsHero,
   earringsPromoSection,
-  earringsStandardsBanner,
   earringsEditSection,
 
   // Pendants

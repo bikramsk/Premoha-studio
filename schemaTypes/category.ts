@@ -22,10 +22,5 @@ export default {
       type: 'image',
       title: 'Default Image',
     },
-    {
-      name: 'hoverImage',
-      type: 'image',
-      title: 'Hover Image',
-    },
   ],
 }
